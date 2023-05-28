@@ -1,0 +1,204 @@
+.content{
+    max-width: 48rem;
+    margin: auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    align-items: flex-start;
+
+}
+
+.contentHeader > form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -28px;
+
+}
+
+.contentHeader > form > input {
+   width: 100%;
+   padding: 16px;
+    gap: 8px;
+    height: 56px;
+    background: var(--gray-500);
+
+    border: 1px solid var(--gray-700);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    color: var(--gray-100);
+
+    margin-right: 0.5rem;
+
+}
+
+.contentHeader > form > input:focus {
+    outline: 1px solid var(--purple-dark);
+}
+
+.contentHeader > form > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    padding: 1rem;
+    border-radius: 8px;
+    border:none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.contentHeader > button > svg{
+    margin-left: 0.25rem;
+    size: 24px;
+}
+
+.contentHeader > form > button:hover{
+    background: var(--blue);
+}
+
+.contentMain > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.contentMain > header > p {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.contentMain > header > p + p{
+    color: var(--purple);
+}
+
+.contentMain > header > p > span {
+    padding: 2px 8px;
+    gap: 10px;
+    border-radius: 999px;
+    background-color: var(--gray-400);
+    color: var(--gray-100);
+    margin-left: 0.5rem;
+
+}
+
+.contentList {
+    width: 100%;
+    margin-top: 24px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 1px solid var(--gray-400)
+}
+
+.emptyMessage{
+    text-align: center;
+    color: var(--gray-300);
+    max-width: 316px;
+    font-size: 16px;
+
+    margin:auto;
+    margin-top: 88px;
+}
+
+.emptyMessage > p {
+    font-weight: 700;
+}
+
+.emptyMessage > p + p {
+    font-weight: 400;
+}
+
+.todo{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    background: var(--gray-500);
+
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.todo + .todo{
+  margin-top: 12px;
+}
+
+  .customCheckbox input[type=checkbox] {
+    display: none;
+  }
+  
+  .customCheckbox input + label:before {
+    content: "";
+    width: 17.45px;
+    height: 17.45px;
+    display: inline-block;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--gray-100);
+    border: 2px solid var(--blue);
+    cursor: pointer;
+    margin: 0 0 0 3px;
+  }
+
+  .customCheckbox input + label:hover:before{
+    background: var(--blue);
+    opacity:0.5;
+    border: 2px solid var(--blue-dark);
+
+
+  }
+
+  .customCheckbox input:checked + label:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: var(--purple-dark);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 2px;
+  }
+  
+  .customCheckbox input:checked + label:hover:before{
+    background-color: var(--purple);
+
+  }
+
+  .todo > p{
+    max-width: 632px;
+    font-size: 14px;
+    display: block;
+    text-align: justify;
+    margin: 0 12px;
+  }
+
+ 
+
+  .todo > button{
+    margin-top: -5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--gray-300);
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+
+
+  }
+
+  .todo > button:hover{
+    background: var(--gray-400);
+    color: var(--danger);
+    border-radius: 8px;
+    padding: 5px;
+  }
